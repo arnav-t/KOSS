@@ -5,6 +5,17 @@ html
 
 .gradient-back 
 {
-	background: linear-gradient(to bottom right, grey, lime);
+	background: linear-gradient(to bottom right, Grey, Lime);
 	text-align: center;
+}
+
+.foreground
+{
+	border-style: dashed;
+	background: linear-gradient(to bottom, Grey, DarkSlateGrey);
+	border-color: White;
+	width: 75%;
+	color: White;
+	margin: auto;
+	font-family: "Monospace";
 }
