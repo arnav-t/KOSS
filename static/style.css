@@ -1,0 +1,10 @@
+html
+{
+	min-height: 100%;
+}
+
+.gradient-back 
+{
+	background: linear-gradient(to bottom right, grey, lime);
+	text-align: center;
+}
