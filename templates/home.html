@@ -4,11 +4,16 @@
 	<head>
     	<meta charset="UTF-8">
     	<link rel="stylesheet" type="text/css" href="../static/style.css">
+    	{{ output|safe }}
     	<title>KOSS Task</title>
 	</head>
   	<body class="gradient-back">
   		<div class="foreground">
-  			<h1>lol homepadde XDDD</h1>
+  			<h1>Capitalizer</h1>
+  			<form method="POST">
+  				Input: <input type="text" name="string"><br>
+  				<input type="submit" value="Submit"><br>
+  			</form>
   		</div>
   	</body>
 </html>
