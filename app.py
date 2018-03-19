@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+import string as str
 
 app = Flask(__name__)
 
@@ -6,7 +7,12 @@ app = Flask(__name__)
 def root():
 	if request.method == "POST":
 		string = request.form.get('string')
-		string = r'<script>alert("Result: {}")</script>'.format(string.upper())
+		checked = request.form.get('checkBox')
+		if(checked):
+			string = str.capwords(string)
+		else:
+			string = string.upper()
+		string = r'<script>alert("Result: {}")</script>'.format(string)
 		return render_template("home.html", output = string)
 	else:
 		return render_template("home.html", output = "")
