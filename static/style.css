@@ -19,3 +19,29 @@ html
 	margin: auto;
 	font-family: "Monospace";
 }
+.topBar
+{
+	background: linear-gradient(to bottom left, Green, #004466);
+    align: center;
+    border: solid 2px;
+}
+.button
+{
+	background: linear-gradient(to bottom, Grey, #008888);	
+    height: 20px;	
+    width: 192px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.5;
+    color: white;
+    border: solid 2px grey;
+    margin: auto;
+    transition: all 0.5s;
+    
+}
+.button:hover
+{
+    background: linear-gradient(to bottom, Grey, #00bbbb);
+    border-color: white;
+    opacity: 0.8;
+}

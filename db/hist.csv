@@ -2,3 +2,6 @@ Input,Output
 Hello world,HELLO WORLD
 hello worLd,HELLO WORLD
 hEllo WoRlD,Hello World
+aBcDef,ABCDEF
+test 456 words xyz,Test 456 Words Xyz
+capitalize all 245,CAPITALIZE ALL 245

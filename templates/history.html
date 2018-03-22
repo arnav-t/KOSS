@@ -4,24 +4,19 @@
 	<head>
     	<meta charset="UTF-8">
     	<link rel="stylesheet" type="text/css" href="../static/style.css">
-    	<title>Error 404</title>
+    	<title>History</title>
 	</head>
   	<body class="gradient-back">
   		<div class="foreground">
-  			<h1>404: Not Found</h1>
+  			<h1>History</h1>
         <div class="topBar">
           <a href="/">
             <div class="button">
               Home
             </div>
           </a>
-          <a href="/history">
-            <div class="button">
-              History
-            </div>
-          </a>
         </div>
-  			No such page exists.
+  			{{ table|safe }}
   		</div>
   	</body>
 </html>

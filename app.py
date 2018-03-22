@@ -20,9 +20,15 @@ def root():
 		df = pd.DataFrame(data=data)
 		with open('./db/hist.csv', 'a') as dbFile:
 			df.to_csv(dbFile, header = False, index = False)
-		return render_template("home.html", output = string)
+		return render_template('home.html', output = string)
 	else:
-		return render_template("home.html", output = "")
+		return render_template('home.html', output = '')
+
+@app.route('/history')    
+def load_history():    
+    df = pd.read_csv("./db/hist.csv")
+    return render_template('history.html', table = df.to_html())
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
